@@ -61,7 +61,7 @@ nav {
 }
 .nav-logo:hover { opacity: 0.85; }
 .nav-logo span { color: var(--accent); }
-.nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+.nav-links { display: flex; gap: 32px; list-style: none; align-items: center; }
 .nav-links a {
   position: relative;
   font-size: 14px; font-weight: 500; color: var(--ink-muted);
@@ -130,7 +130,7 @@ h1 em { font-style: normal; color: var(--accent); }
   font-size: 16px; font-weight: 400; line-height: 1.7;
   color: var(--ink-muted); margin-bottom: 40px;
 }
-.hero-actions { display: flex; gap: 16px; flex-wrap: wrap; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
 /* ── ACTION COMPONENTS ── */
 .btn-primary {
@@ -417,6 +417,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
 </head>
 <body>
 
+<!-- NAV -->
 <nav>
   <a href="#" class="nav-logo">SD<span>.</span></a>
   <button class="menu-toggle" aria-label="Toggle Navigation">
@@ -434,6 +435,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </ul>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
   <div class="hero-text fade-up">
     <div class="hero-eyebrow">AI & ML Engineer</div>
@@ -441,13 +443,17 @@ footer p { font-size: 13px; color: var(--ink-dark); }
     <p class="hero-sub">Pre-final year AI & Data Science student from Jodhpur. I design production-grade ML pipelines — offline, efficient, and actually deployable.</p>
     <div class="hero-actions">
       <a href="#projects" class="btn-primary">View Projects →</a>
+      <!-- Clean, integrated Resume anchor element. Swap 'resume.pdf' out with your hosting file path -->
+      <a href="resume.pdf" class="btn-outline" download>Download Resume ↓</a>
       <a href="#contact" class="btn-outline">Get in Touch</a>
     </div>
   </div>
   <div class="hero-visual fade-up">
     <div class="engine-container">
+      <!-- High-contrast abstract neural vector retriever matrix flow -->
       <svg width="320" height="240" viewBox="0 0 320 240" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g>
+          <!-- Vector space grid lines -->
           <line x1="20" y1="40" x2="300" y2="40" stroke="rgba(59, 130, 246, 0.25)" stroke-width="1"/>
           <line x1="20" y1="120" x2="300" y2="120" stroke="rgba(59, 130, 246, 0.25)" stroke-width="1"/>
           <line x1="20" y1="200" x2="300" y2="200" stroke="rgba(59, 130, 246, 0.25)" stroke-width="1"/>
@@ -455,15 +461,18 @@ footer p { font-size: 13px; color: var(--ink-dark); }
           <line x1="160" y1="20" x2="160" y2="220" stroke="rgba(59, 130, 246, 0.25)" stroke-width="1"/>
           <line x1="260" y1="20" x2="260" y2="220" stroke="rgba(59, 130, 246, 0.25)" stroke-width="1"/>
           
+          <!-- RAG Node Intersections & Tokens -->
           <circle cx="60" cy="40" r="4.5" fill="#3b82f6"/>
           <circle cx="160" cy="120" r="5.5" fill="#10b981"/>
           <circle cx="260" cy="200" r="4.5" fill="#3b82f6"/>
           <circle cx="260" cy="40" r="3.5" fill="#9ca3af"/>
           <circle cx="60" cy="200" r="3.5" fill="#9ca3af"/>
           
+          <!-- System Vector Flow Data Paths -->
           <path d="M60 40 L160 120 L260 200" stroke="#3b82f6" stroke-width="2" stroke-dasharray="2 2"/>
           <path d="M60 200 L160 120 L260 40" stroke="#9ca3af" stroke-width="1.5" stroke-dasharray="4 4"/>
           
+          <!-- Focal Extraction Node Glow -->
           <circle cx="160" cy="120" r="12" stroke="#10b981" stroke-width="1.5" stroke-opacity="0.7">
             <animate attributeName="r" values="9;16;9" dur="3s" repeatCount="indefinite"/>
           </circle>
@@ -473,6 +482,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </section>
 
+<!-- STATS -->
 <div class="stats-row fade-up">
   <div class="stat-item">
     <div class="stat-num">3<span>+</span></div>
@@ -492,6 +502,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </div>
 
+<!-- ABOUT -->
 <section id="about">
   <div class="about-grid fade-up">
     <div class="about-text">
@@ -554,6 +565,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </section>
 
+<!-- EXPERIENCE -->
 <section id="experience">
   <div class="sec-eyebrow fade-up">Experience</div>
   <div class="sec-title fade-up">Where I've worked.</div>
@@ -580,11 +592,13 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
   <div class="sec-eyebrow fade-up">Projects</div>
   <div class="sec-title fade-up">Things I've built.</div>
   <div class="projects-grid">
 
+    <!-- DocMind AI -->
     <div class="proj-card fade-up">
       <div class="proj-badge offline">📄 Offline · No API Keys</div>
       <div class="proj-header">
@@ -606,6 +620,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
       </div>
     </div>
 
+    <!-- Sentinel AI -->
     <div class="proj-card fade-up">
       <div class="proj-badge offline">🦙 Local LLM · Llama 3 8B</div>
       <div class="proj-header">
@@ -626,6 +641,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
       </div>
     </div>
 
+    <!-- Driver Analysis -->
     <div class="proj-card fade-up">
       <div class="proj-badge research">🔬 Research · NNLAB</div>
       <div class="proj-header">
@@ -649,6 +665,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </section>
 
+<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="sec-eyebrow fade-up">Certifications & Achievements</div>
   <div class="sec-title fade-up">Recognised work.</div>
@@ -684,6 +701,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </section>
 
+<!-- BLOG -->
 <section id="blog">
   <div class="sec-eyebrow fade-up">Blog</div>
   <div class="sec-title fade-up">Thoughts & Writeups.</div>
@@ -696,6 +714,7 @@ footer p { font-size: 13px; color: var(--ink-dark); }
   </div>
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
   <div class="sec-eyebrow">Get in touch</div>
   <div class="sec-title">Let's work together.</div>
